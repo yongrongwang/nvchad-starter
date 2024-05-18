@@ -5,12 +5,24 @@
 local M = {}
 
 M.ui = {
-	theme = "onedark",
+  theme = "monekai",
 
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+  tabufline = {
+    order = { "buffers" },
+  },
+
+  statusline = {
+    theme = "vscode_colored",
+  },
+}
+
+M.term = {
+  sizes = { sp = 1, vsp = 1 },
+  float = {
+    width = 1,
+    height = 1,
+    border = "none",
+  },
 }
 
 return M
